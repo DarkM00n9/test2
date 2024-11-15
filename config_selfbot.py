@@ -12,7 +12,7 @@ selfbot_name = "Destroyer" # Tip: Don't use the "Selfbot" word into your selfbot
 
 # en: Account Token.
 # fr: Token du compte.
-token = "your token"
+token = ""
 
 # en: Commands prefix.
 # fr: Prefix des commandes.
