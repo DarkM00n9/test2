@@ -1,0 +1,46 @@
+{
+    "id": 1304622468035641435,
+    "name": "Server Test SelfBot + ServerCloner JNMSHOP V1",
+    "roles": [
+        {
+            "id": 1307055463820689418,
+            "name": "test tools",
+            "permissions": 0,
+            "color": 0,
+            "mentionable": false,
+            "hoist": false,
+            "position": 1
+        },
+        {
+            "id": 1307055487333695578,
+            "name": "admin",
+            "permissions": 1099511627822,
+            "color": 0,
+            "mentionable": false,
+            "hoist": true,
+            "position": 2
+        }
+    ],
+    "categories": [],
+    "channels": [
+        {
+            "id": 1307055690744991754,
+            "name": "test-selfbot-v2",
+            "type": "text",
+            "position": 1,
+            "category": null,
+            "permissions": []
+        },
+        {
+            "id": 1307055691856347257,
+            "name": "test-selfbot-v2",
+            "type": "text",
+            "position": 2,
+            "category": null,
+            "permissions": []
+        }
+    ],
+    "default_role": {
+        "permissions": 2248473465835073
+    }
+}

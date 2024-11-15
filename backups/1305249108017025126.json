@@ -1,0 +1,50 @@
+{
+    "guild": {
+        "id": 1305249108017025126,
+        "name": "Server Test SelfBot + ServerCloner JNMSHOP V1",
+        "channels": [
+            {
+                "id": 1307061267021959189,
+                "name": "fd",
+                "messages": [
+                    {
+                        "author": 1303518215942570066,
+                        "content": "\ud83d\udd01 Cr\u00e9ation de la backup en cours...",
+                        "timestamp": "2024-11-15T19:15:06.387000+00:00"
+                    },
+                    {
+                        "author": 1303518215942570066,
+                        "content": "Server Test SelfBot + ServerCloner JNMSHOP V1: \u2705 Backup supprim\u00e9e avec succ\u00e8s !",
+                        "timestamp": "2024-11-15T19:15:03.303000+00:00"
+                    },
+                    {
+                        "author": 1303518215942570066,
+                        "content": "df",
+                        "timestamp": "2024-11-15T19:14:53.581000+00:00"
+                    },
+                    {
+                        "author": 1303518215942570066,
+                        "content": "df",
+                        "timestamp": "2024-11-15T19:14:53.343000+00:00"
+                    },
+                    {
+                        "author": 1303518215942570066,
+                        "content": "df",
+                        "timestamp": "2024-11-15T19:14:53.088000+00:00"
+                    },
+                    {
+                        "author": 1303518215942570066,
+                        "content": "fdf",
+                        "timestamp": "2024-11-15T19:14:52.807000+00:00"
+                    },
+                    {
+                        "author": 1303518215942570066,
+                        "content": "fdfd",
+                        "timestamp": "2024-11-15T19:14:52.406000+00:00"
+                    }
+                ]
+            }
+        ]
+    },
+    "messages": []
+}

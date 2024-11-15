@@ -1,0 +1,27 @@
+{
+    "id": 1306678525448687668,
+    "name": "SelfBot x ServerCloner",
+    "roles": [],
+    "categories": [],
+    "channels": [
+        {
+            "id": 1306678526153588809,
+            "name": "ccc",
+            "type": "text",
+            "position": 0,
+            "category": null,
+            "permissions": []
+        },
+        {
+            "id": 1306956941154586705,
+            "name": "ccc",
+            "type": "text",
+            "position": 1,
+            "category": null,
+            "permissions": []
+        }
+    ],
+    "default_role": {
+        "permissions": 2248473465835073
+    }
+}
