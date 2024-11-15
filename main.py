@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 print("========================")
-print("LAUNCHING test2")
+print("LAUNCHING DESTROYER")
 import subprocess
 print("10%, Importing required modules...")
 try:
@@ -57,14 +57,15 @@ print("========================")
 # Clear terminal
 os.system('cls' if os.name == 'nt' else 'clear')
 
-print(fr"""{Fore.LIGHTCYAN_EX}$$\   $$\                     $$\                               
-$$$\  $$ |                    $$ |                              
-$$$$\ $$ |$$\   $$\  $$$$$$$\ $$ | $$$$$$\   $$$$$$\   $$$$$$\  
-$$ $$\$$ |$$ |  $$ |$$  _____|$$ |$$  __$$\  \____$$\ $$  __$$\ 
-$$ \$$$$ |$$ |  $$ |$$ /      $$ |$$$$$$$$ | $$$$$$$ |$$ |  \__|
-$$ |\$$$ |$$ |  $$ |$$ |      $$ |$$   ____|$$  __$$ |$$ |      
-$$ | \$$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\ \$$$$$$$ |$$ |      
-\__|  \__| \______/  \_______|\__| \_______| \_______|\__|  v{__version__}{Style.RESET_ALL}""")
+print(fr"""{Fore.LIGHTCYAN_EX} _ .-') _     ('-.    .-')    .-') _   _  .-')                               ('-.  _  .-')   
+( (  OO) )  _(  OO)  ( OO ). (  OO) ) ( \( -O )                            _(  OO)( \( -O )  
+ \     .'_ (,------.(_)---\_)/     '._ ,------.  .-'),-----.   ,--.   ,--.(,------.,------.  
+ ,`'--..._) |  .---'/    _ | |'--...__)|   /`. '( OO'  .-.  '   \  `.'  /  |  .---'|   /`. ' 
+ |  |  \  ' |  |    \  :` `. '--.  .--'|  /  | |/   |  | |  | .-')     /   |  |    |  /  | | 
+ |  |   ' |(|  '--.  '..`''.)   |  |   |  |_.' |\_) |  |\|  |(OO  \   /   (|  '--. |  |_.' | 
+ |  |   / : |  .--' .-._)   \   |  |   |  .  '.'  \ |  | |  | |   /  /\_   |  .--' |  .  '.' 
+ |  '--'  / |  `---.\       /   |  |   |  |\  \    `'  '-'  ' `-./  /.__)  |  `---.|  |\  \  
+ `-------'  `------' `-----'    `--'   `--' '--'     `-----'    `--'       `------'`--' '--'   v{__version__}{Style.RESET_ALL}""")
 
 
 # Change terminal title
@@ -80,7 +81,7 @@ def set_terminal_title(title: str):
         sys.stdout.flush()
 
 try:
-   set_terminal_title("| test2 Selfbot |")
+   set_terminal_title("| DESTROYER Selfbot |")
 except Exception as e:
    log.warning(f"Error while trying to change the terminal name: {e}")
 
@@ -89,14 +90,15 @@ except Exception as e:
 if config_selfbot.token == "":
     config_selfbot.token = input("Token: ")
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(fr"""{Fore.LIGHTCYAN_EX}$$\   $$\                     $$\                               
-    $$$\  $$ |                    $$ |                              
-    $$$$\ $$ |$$\   $$\  $$$$$$$\ $$ | $$$$$$\   $$$$$$\   $$$$$$\  
-    $$ $$\$$ |$$ |  $$ |$$  _____|$$ |$$  __$$\  \____$$\ $$  __$$\ 
-    $$ \$$$$ |$$ |  $$ |$$ /      $$ |$$$$$$$$ | $$$$$$$ |$$ |  \__|
-    $$ |\$$$ |$$ |  $$ |$$ |      $$ |$$   ____|$$  __$$ |$$ |      
-    $$ | \$$ |\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\ \$$$$$$$ |$$ |      
-    \__|  \__| \______/  \_______|\__| \_______| \_______|\__|  v{__version__}{Style.RESET_ALL}""")
+    print(fr"""{Fore.LIGHTCYAN_EX} _ .-') _     ('-.    .-')    .-') _   _  .-')                               ('-.  _  .-')   
+( (  OO) )  _(  OO)  ( OO ). (  OO) ) ( \( -O )                            _(  OO)( \( -O )  
+ \     .'_ (,------.(_)---\_)/     '._ ,------.  .-'),-----.   ,--.   ,--.(,------.,------.  
+ ,`'--..._) |  .---'/    _ | |'--...__)|   /`. '( OO'  .-.  '   \  `.'  /  |  .---'|   /`. ' 
+ |  |  \  ' |  |    \  :` `. '--.  .--'|  /  | |/   |  | |  | .-')     /   |  |    |  /  | | 
+ |  |   ' |(|  '--.  '..`''.)   |  |   |  |_.' |\_) |  |\|  |(OO  \   /   (|  '--. |  |_.' | 
+ |  |   / : |  .--' .-._)   \   |  |   |  .  '.'  \ |  | |  | |   /  /\_   |  .--' |  .  '.' 
+ |  '--'  / |  `---.\       /   |  |   |  |\  \    `'  '-'  ' `-./  /.__)  |  `---.|  |\  \  
+ `-------'  `------' `-----'    `--'   `--' '--'     `-----'    `--'       `------'`--' '--'   v{__version__}{Style.RESET_ALL}""")
 
 
 if config_selfbot.lang == "":
@@ -163,7 +165,7 @@ if check_loop:
     try:
         run_in_background()
     except Exception as e:
-        log.warning(f"Error while trying to check the last Nuclear version: {e}")
+        log.warning(f"Error while trying to check the last Destroyer version: {e}")
 
 log.start(lang.text('start_text'))
 
@@ -210,10 +212,35 @@ async def on_ready():
     except Exception as e:
         log.fail(f"HelpCommands: {lang.text('cog_fail')} {e}")
     try:
+        await bot.add_cog(FunCommands(bot))
+        log.success(f"FunCommands: {lang.text('cog_success')}")
+    except Exception as e:
+        log.fail(f"FunCommands: {lang.text('cog_fail')} {e}")
+    try:
+        await bot.add_cog(UtilsCommands(bot))
+        log.success(f"UtilsCommands: {lang.text('cog_success')}")
+    except Exception as e:
+        log.fail(f"UtilsCommands: {lang.text('cog_fail')} {e}")
+    try:
+        await bot.add_cog(VoiceCommands(bot))
+        log.success(f"VoiceCommands: {lang.text('cog_success')}")
+    except Exception as e:
+        log.fail(f"VoiceCommands: {lang.text('cog_fail')} {e}")
+    try:
+        await bot.add_cog(ConfigCommands(bot))
+        log.success(f"ConfigCommands: {lang.text('cog_success')}")
+    except Exception as e:
+        log.fail(f"ConfigCommands: {lang.text('cog_fail')} {e}")
+    try:
         await bot.add_cog(RaidCommands(bot))
         log.success(f"RaidCommands: {lang.text('cog_success')}")
     except Exception as e:
         log.fail(f"RaidCommands: {lang.text('cog_fail')} {e}")
+    try:
+        await bot.add_cog(ToolsCommands(bot))
+        log.success(f"ToolsCommands: {lang.text('cog_success')}")
+    except Exception as e:
+        log.fail(f"ToolsCommands: {lang.text('cog_fail')} {e}")
     try:
         await bot.add_cog(TemplatesCommands(bot))
         log.success(f"TemplatesCommands: {lang.text('cog_success')}")
@@ -265,17 +292,17 @@ async def on_ready():
             log.alert(f"{lang.text('error_rpc')}\n{e}\n{lang.text('error_rpc_two')}")
 
     if rpc.read_variable_json("create_panel"):
-        with open('nuclear_icon.png', 'rb') as image:
-            nuclear_icon = image.read()
+        with open('destroyer_icon.png', 'rb') as image:
+            destroyer_icon = image.read()
         panel = await bot.create_group()
         await asyncio.sleep(0.7)
-        await panel.edit(name="Nuclear Panel", icon=nuclear_icon)
+        await panel.edit(name="Destroyer Panel", icon=destroyer_icon)
         await panel.send(f"<@{bot.user.id}>", delete_after=0.4)
         msg = await panel.send(lang.text('panel_message'))
         await msg.unack()
         # Remove embed
         rpc.edit_variable_json("create_panel", False)
-        log.alert("NuclearPanel successfully created (check DMs!).\nIf not, please check the 'Issues' category into the GitHub's README for further help.")
+        log.alert("DestroyerPanel successfully created (check DMs!).\nIf not, please check the 'Issues' category into the GitHub's README for further help.")
 
 
 def restart_selfbot():

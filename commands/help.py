@@ -218,7 +218,7 @@ class HelpCommands(commands.Cog):
  `{config_selfbot.prefix}use omori`: {lang.text('template_help_omori')}
  `{config_selfbot.prefix}use youtube`: {lang.text('template_help_youtube')}
  `{config_selfbot.prefix}use car`: {lang.text('template_help_car')}
- `{config_selfbot.prefix}use nuclear`: {lang.text('template_help_self')}
+ `{config_selfbot.prefix}use destroyer`: {lang.text('template_help_self')}
  `{config_selfbot.prefix}use dark`: {lang.text('template_help_dark')}
  `{config_selfbot.prefix}use python`: {lang.text('template_help_python')}
  `{config_selfbot.prefix}use js`: {lang.text('template_help_js')}

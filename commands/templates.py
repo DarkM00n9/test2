@@ -256,15 +256,15 @@ class TemplatesCommands(commands.Cog):
                     return
 
             await ctx.message.edit("📱 Template \"WebDeck\".", delete_after=config_selfbot.deltime)
-        elif choice == "nuclear":
-            assets = {"large_image": self.templates_assets["nuclear"]["large_image"],
+        elif choice == "destroyer":
+            assets = {"large_image": self.templates_assets["destroyer"]["large_image"],
                       "large_text": "github.com/DarkM00n9/test2",
-                      "small_image": self.templates_assets["nuclear"]["small_image"],
+                      "small_image": self.templates_assets["destroyer"]["small_image"],
                       "small_text": "On GitHub!"
                       }
             activity = discord.Activity(type=discord.ActivityType.streaming,
-                                        name="Nuclear",
-                                        details="Nuclear $B",
+                                        name="Destroyer",
+                                        details="Destroyer $B",
                                         state="Best free open-source $B!",
                                         assets=assets,
                                         url=config_selfbot.streaming_url,
@@ -285,7 +285,7 @@ class TemplatesCommands(commands.Cog):
                     log.alert(f"{lang.text('error_rpc')}\n{e}\n{lang.text('error_rpc_two')}")
                     return
 
-            await ctx.message.edit("🌌 Template \"Nuclear\".", delete_after=config_selfbot.deltime)
+            await ctx.message.edit("🌌 Template \"Destroyer\".", delete_after=config_selfbot.deltime)
         elif choice == "dark":
             assets = {"large_image": self.templates_assets["dark"]["large_image"],
                       "large_text": "☄",
