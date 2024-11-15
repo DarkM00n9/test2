@@ -139,7 +139,7 @@ if discord.__title__ != "discord.py-self":
     exit()
 
 # Prevent from starting the selfbot with the broken pip version
-if discord.__version__.startswith("2.0.0"):
+if discord.__version__.startswith("v1.8"):
     log.critical(lang.text('error_discord_version'))
     exit()
 
