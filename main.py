@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 print("========================")
-print("LAUNCHING NUCLEAR-V2")
+print("LAUNCHING test2")
 import subprocess
 print("10%, Importing required modules...")
 try:
@@ -80,7 +80,7 @@ def set_terminal_title(title: str):
         sys.stdout.flush()
 
 try:
-   set_terminal_title("| Nuclear-V2 Selfbot |")
+   set_terminal_title("| test2 Selfbot |")
 except Exception as e:
    log.warning(f"Error while trying to change the terminal name: {e}")
 
@@ -126,8 +126,8 @@ check_loop = True
 
 # Check if it's a developement version, if it is, disable UpdateChecker
 try:
-    if float(__version__) > float(check_latest_version('Sitois', 'Nuclear-V2').strip('v')):
-        log.warning(f"{lang.text('unstable_version')} https://github.com/Sitois/Nuclear-V2/releases/latest")
+    if float(__version__) > float(check_latest_version('DarkM00n9', 'test2').strip('v')):
+        log.warning(f"{lang.text('unstable_version')} https://github.com/DarkM00n9/test2/releases/latest")
         check_loop = False
 except Exception:
     # Avoid crashes if the version is i.g.: 'v1.1.1'.
@@ -145,8 +145,8 @@ if discord.__version__.startswith("2.0.0"):
 
 
 def call_check_repo():
-    repo_owner = "Sitois"
-    repo_name = "Nuclear-V2"
+    repo_owner = "DarkM00n9"
+    repo_name = "test2"
     while True:
         latest_version = check_latest_version(repo_owner, repo_name)
         if latest_version:

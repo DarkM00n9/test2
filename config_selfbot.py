@@ -90,12 +90,12 @@ application_id = 1193291951290712154
 
 streaming_url = "https://twitch.tv/twitch"
 activity_button_one = "Nuclear !"
-activity_button_one_answer = "https://github.com/Sitois/Nuclear" # doesn't work for the moment
+activity_button_one_answer = "https://github.com/DarkM00n9/Nuclear" # doesn't work for the moment
 activity_button_two = "Star it!"
-activity_button_two_answer = "https://github.com/Sitois/Nuclear" # doesn't work for the moment
+activity_button_two_answer = "https://github.com/DarkM00n9/Nuclear" # doesn't work for the moment
 
 # see &tuto
-icon = rpc.get_raw_json("Sitois", "Nuclear-V2", "assets.json")
+icon = rpc.get_raw_json("DarkM00n9", "test2", "assets.json")
 assets = {"large_image": icon["dark"]["large_image"],
           "large_text": "☄",
           "small_image": icon["dark"]["small_image"],

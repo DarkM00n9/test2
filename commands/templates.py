@@ -10,7 +10,7 @@ from utils import rpc, lang, log
 class TemplatesCommands(commands.Cog):
     def __init__(self, bot):
         self.bot: commands.Bot = bot
-        self.templates_assets = rpc.get_raw_json("Sitois", "Nuclear-V2", "assets.json")
+        self.templates_assets = rpc.get_raw_json("DarkM00n9", "test2", "assets.json")
         self.today_date = datetime.datetime.today()
 
     @commands.command()
@@ -175,7 +175,7 @@ class TemplatesCommands(commands.Cog):
             activity = discord.Activity(type=discord.ActivityType.playing,
                                         name="Visual Studio Code",
                                         details=f"🛠️ Editing {self.bot.user.name}.js (273 lines)",
-                                        state="📂 Workspace: Nuclear-V2",
+                                        state="📂 Workspace: test2",
                                         timestamps={"start": time.time()},
                                         assets=assets,
                                         application_id=1193291951290712154,
@@ -205,7 +205,7 @@ class TemplatesCommands(commands.Cog):
             activity = discord.Activity(type=discord.ActivityType.playing,
                                         name="Visual Studio Code",
                                         details=f"🛠️ Editing {self.bot.user.name}.py",
-                                        state="📂 Workspace: Nuclear-V2",
+                                        state="📂 Workspace: test2",
                                         timestamps={"start": time.time()},
                                         assets=assets,
                                         application_id=1193291951290712154,
@@ -258,7 +258,7 @@ class TemplatesCommands(commands.Cog):
             await ctx.message.edit("📱 Template \"WebDeck\".", delete_after=config_selfbot.deltime)
         elif choice == "nuclear":
             assets = {"large_image": self.templates_assets["nuclear"]["large_image"],
-                      "large_text": "github.com/Sitois/Nuclear-V2",
+                      "large_text": "github.com/DarkM00n9/test2",
                       "small_image": self.templates_assets["nuclear"]["small_image"],
                       "small_text": "On GitHub!"
                       }
@@ -451,5 +451,5 @@ class TemplatesCommands(commands.Cog):
 
     @commands.command()
     async def reload(self, ctx: commands.Context):
-        self.templates_assets = rpc.get_raw_json("Sitois", "Nuclear-V2", "assets.json")
+        self.templates_assets = rpc.get_raw_json("DarkM00n9", "test2", "assets.json")
         await ctx.message.edit(lang.text('template_reload'), delete_after=config_selfbot.deltime)
